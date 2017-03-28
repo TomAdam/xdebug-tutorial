@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  roles:
+  - base
+  - dotdeb
+  - git
+  - php7-fpm
+  - php7-cli
+  - nginx
+  - composer

@@ -1,0 +1,11 @@
+---
+nginx_user: vagrant
+php_xdebug: true
+
+nginx_vhosts:
+- src: xdebug.j2
+  dest: xdebug
+
+php_fpm_pools:
+- src: xdebug.conf.j2
+  dest: xdebug.conf

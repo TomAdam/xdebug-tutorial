@@ -1,0 +1,15 @@
+---
+- name: Install system packages (APT)
+  apt: pkg={{ item }} state=latest update_cache=yes cache_valid_time=3600
+  with_items: "{{system_packages}}"
+
+- name: Generate required locales
+  locale_gen: name={{ item }} state=present
+  with_items: "{{system_locales}}"
+
+- name: Set default locale
+  copy: content="LANG=\"{{ system_default_locale }}\"\n" dest=/etc/default/locale owner=root group=root mode=0644
+
+- name: Set default timezone
+  copy: content="{{ system_timezone }}\n" dest=/etc/timezone owner=root group=root mode=0644
+  notify: update timezone

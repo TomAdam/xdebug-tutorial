@@ -1,0 +1,11 @@
+;
+; {{ ansible_managed }}
+;
+
+[xdebug]
+user = vagrant
+listen = 127.0.0.1:9000
+listen.allowed_clients = 127.0.0.1
+pm = static
+pm.max_children = 1
+pm.max_requests = 50
