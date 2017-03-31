@@ -20,4 +20,11 @@ To install a plugin run ```vagrant plugin install <plugin_name>```.
 Installation
 ------------
 
-Run ```vagrant up``` in the project root. Grab a drink, this will take a few minutes.
+Run ```vagrant up``` in the project root. Grab a drink, this will take a few minutes. During the install process you'll be asked for your root or administrator password. This is to add the virtual machines hostname to your hosts files (/etc/hosts on *nix systems).
+
+
+Testing
+-------
+
+Once setup check everything works by typing  http://xdebug.dev/ into your browser and check that you get a meme. If you see this then everything is OK. If not get in touch. 
+
