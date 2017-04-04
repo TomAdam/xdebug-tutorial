@@ -19,23 +19,18 @@ The aim of this evening isn't to give you flawless knowledge of how to use Xdebu
 
 The exercises are in the web directory of the project, in separate directories.
 
-# Exercise 1 - getting going
+# Exercise 1 - Getting started
 
-There's two ways to start debugging something:
+1. Start the VM
+2. Install Xdebug
+3. Configure PHP
+4. Check configuration
+5. Install browser plugins
+6. Configure PhpStorm
 
-Quick way - right click on the file and select 'Debug PHP' - I really don't know why PhpStorm gives you a trick question of do you want to debug this PHP file as Javascript.
+Task 1 - Install and configure Xdebug
 
-You may need to configure which PHP executable should be used - most of the time this only needs to be done once.
-
-Longer way - 'Edit configurations' in the top right window. This allows more complex setup e.g. debugging server side code, setting arguments. For now keep with the 'PHP Script'.
-
-We'll talk about 'stepping through' code as part of the next exercise, but I just need to mention once your code has stopped on the xdebug_break() you'll need to hit the green 'Resume program' button.
-
-  
-Task 1 - Launch the exercise_1/index.php through xdebug it should stop automatically if Xdebug is configured properly. Raise your flag if it doesn't stop. Press play or step over to run through to the end of the script.
-
- 
-Task 2 - Edit the PHP script configuration through the menu in the top right to pass in an argument (or two) to the script so that it can greet you properly. 
+Task 2 - Configure PhpStorm
 
 
 # Exercise 2 - Simple breakpoints + Stepping through code
