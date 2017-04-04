@@ -1,6 +1,5 @@
 ---
 nginx_user: vagrant
-php_xdebug: true
 
 nginx_vhosts:
 - src: xdebug.j2

@@ -1,4 +1,3 @@
 ---
 php_cli_date_timezone: Europe/London
 php_packages: []
-php_xdebug: false

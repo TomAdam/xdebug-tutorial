@@ -6,8 +6,5 @@
   apt: pkg={{ item }} state=latest update_cache=yes cache_valid_time=3600
   with_items: "{{php_packages}}"
 
-#- name: Apply PHP CLI settings
-#  template: src=php.ini dest=/etc/php/7.0/cli/php.ini owner=root group=root mode=0644
-
-- include: xdebug.yml
-  when: php_xdebug
+- name: Ensure Xdebug not present
+  apt: pkg=php7.0-xdebug state=absent update_cache=yes cache_valid_time=3600
