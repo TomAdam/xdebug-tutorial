@@ -11,9 +11,11 @@ The format for the evening is going to be this:
 Aim of the evening
 ------------------
 
-To be honest Xdebug is a bit of a pain in the arse to use. Even when you're experienced with it, getting it to co-operate is sometimes still quite annoying.
+To be honest Xdebug is a bit of a pain in the arse to use. Even when you're experienced with it, getting it to 
+co-operate is sometimes still quite annoying.
 
-The aim of this evening isn't to give you flawless knowledge of how to use Xdebug - instead the main goal is to show you what it's capable of
+The aim of this evening isn't to give you flawless knowledge of how to use Xdebug - instead the main goal is to show you
+what it's capable of.
 
 The exercises are in the web directory of the project, in separate directories.
 
