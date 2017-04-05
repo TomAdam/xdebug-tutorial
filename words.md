@@ -44,22 +44,30 @@ current scope.
 - Step out - Jumps out of the current function, and takes the debugger to the line where the function was called.
 - Run to caret - Executes code till the line that the caret is on.
 
-When execution is halted, the "Frames" window shows the current execution stack. This is equivalent to a stack trace in
+When execution is halted, the Frames window shows the current execution stack. This is equivalent to a stack trace in
 an error message. The variables window shows the content of variables in the current scope. Clicking a frame in the
 Frames window allows you to change the scope to any point in the current stack.
 
-Task 1 - Have a play with setting breakpoints, the stepping functions and the frames window to get used to their
- functionality.
+Task - Have a play with setting breakpoints, the stepping functions and the frames window to get used to the 
+functionality. Feel free to ask any questions you have.
 
-# Exercise 4 - Introduction to stack traces
+# Exercise 3 - Advanced breakpoints, variables and watches 
 
-# Exercise 5 - Introduction to variables and watches
+Sometimes you want to debug a function that is called many times, or are interested in a specific cycle of a very long
+loop. Setting a breakpoint and clicking play till you are at the right point can be very time consuming. Conditional
+breakpoints solve this problem, halting execution based on an expression. You can also create breakpoints based on
+Exceptions. They get detected when thrown rather than when unhandled which can be very helpful.
 
-# Exercise 6 - Exception based breakpoints
+Note the use of the breakpoint manager.
 
-# Exercise 7 - Web server debugging 
+We have already seen the variables window showing variable content when the debugger is paused. It also allows variables
+to be changed at runtime.
 
-# Exercise 8 - Remote CLI debugging
+Watches can be used to evaluate expressions in the current scope. They are stored between debugging runs.
+
+Task - Have a play with conditional breakpoints, variables and watches. Feel free to ask any questions you have.
+
+# Exercise 4 - Remote CLI debugging
 
 This is really useful for debugging through unit-tests, or running code in either vagrant/docker to match your production environment, without having to swap versions of PHP 
 
