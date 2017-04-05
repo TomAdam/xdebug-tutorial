@@ -33,19 +33,23 @@ Task 1 - Install and configure Xdebug
 Task 2 - Configure PhpStorm
 
 
-# Exercise 2 - Simple breakpoints + Stepping through code
+# Exercise 2 - Breakpoints, stepping, stack and variables
 
-When you're debugging, you can step through the code.
+To stop execution at a certain point in the code you can set a breakpoint by clicking next to a line. Once execution has
+stopped you can use the stepping controls:
 
-Step over - executes the function, but doesn't take the debugger in there. i.e. takes you to the next line in the current scope.
+- Step over - executes the function, but doesn't take the debugger in there. i.e. takes you to the next line in the 
+current scope.
+- Step into - starts executing the function, and takes the debugger into the first line of that function.
+- Step out - Jumps out of the current function, and takes the debugger to the line where the function was called.
+- Run to caret - Executes code till the line that the caret is on.
 
-Step into - starts executing the function, and takes the debugger into the first line of that function.
+When execution is halted, the "Frames" window shows the current execution stack. This is equivalent to a stack trace in
+an error message. The variables window shows the content of variables in the current scope. Clicking a frame in the
+Frames window allows you to change the scope to any point in the current stack.
 
-Force step into - if anyone knows what this is, please let me know.
-
-Step out of - Jumps out of the current function, and takes the debugger to the line where the function was called from.
-
-Just to point out some downsides, you can't step through PHP internal code - this is actually quite annoying.
+Task 1 - Have a play with setting breakpoints, the stepping functions and the frames window to get used to their
+ functionality.
 
 # Exercise 4 - Introduction to stack traces
 

@@ -1,17 +1,13 @@
 <?php
 
+function factorial($number) {
+    if ($number == 1) {
+        return $number;
+    }
 
-for ($i = 1; $i <= 100; $i++)  {
-    if($i % 3 == 0 && $i % 5 ==0) {
-        echo "FizzBuzz\n";
-    }
-    else if($i % 3 == 0) {
-        echo "Fizz\n";
-    }
-    else if($i % 5 == 0) {
-        echo "Buzz\n";
-    }
-    else {
-        echo $i . "\n";
-    }
+    return $number * factorial($number - 1);
 }
+
+$number = factorial(6);
+
+var_dump($number);
