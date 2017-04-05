@@ -1,25 +1,25 @@
-
-
-# Welcome to Xdebug workshop
-
+Welcome to Xdebug workshop
+==========================
 
 The format for the evening is going to be this:
 
-i. Someone will say some words up here
+1. The exercise will be demoed.
+2. You will have some time to give it a try for yourself
+3. Stand up your flag to indicate you have finished or wave it to indicate you need some help
+4. Repeat
 
-ii. We'll do an exercise involving some debugging.
+Aim of the evening
+------------------
 
-iii. Rinse and repeat, until the end.
-
-## Aim of the evening
- 
 To be honest Xdebug is a bit of a pain in the arse to use. Even when you're experienced with it, getting it to co-operate is sometimes still quite annoying.
 
 The aim of this evening isn't to give you flawless knowledge of how to use Xdebug - instead the main goal is to show you what it's capable of
 
 The exercises are in the web directory of the project, in separate directories.
 
-# Exercise 1 - Getting started
+
+Exercise 1 - Getting started
+============================
 
 1. Start the VM
 2. Install Xdebug
@@ -28,12 +28,14 @@ The exercises are in the web directory of the project, in separate directories.
 5. Install browser plugins
 6. Configure PhpStorm
 
-Task 1 - Install and configure Xdebug
+Tasks
+-----
+1. Install and configure Xdebug
+2. Configure PhpStorm
 
-Task 2 - Configure PhpStorm
 
-
-# Exercise 2 - Breakpoints, stepping, stack and variables
+Exercise 2 - Breakpoints, stepping, stack and variables
+=======================================================
 
 To stop execution at a certain point in the code you can set a breakpoint by clicking next to a line. Once execution has
 stopped you can use the stepping controls:
@@ -48,10 +50,15 @@ When execution is halted, the Frames window shows the current execution stack. T
 an error message. The variables window shows the content of variables in the current scope. Clicking a frame in the
 Frames window allows you to change the scope to any point in the current stack.
 
-Task - Have a play with setting breakpoints, the stepping functions and the frames window to get used to the 
+Tasks
+-----
+
+1. Have a play with setting breakpoints, the stepping functions and the frames window to get used to the 
 functionality. Feel free to ask any questions you have.
 
-# Exercise 3 - Advanced breakpoints, variables and watches 
+
+Exercise 3 - Advanced breakpoints, variables and watches 
+========================================================
 
 Sometimes you want to debug a function that is called many times, or are interested in a specific cycle of a very long
 loop. Setting a breakpoint and clicking play till you are at the right point can be very time consuming. Conditional
@@ -65,42 +72,41 @@ to be changed at runtime.
 
 Watches can be used to evaluate expressions in the current scope. They are stored between debugging runs.
 
-Task - Have a play with conditional breakpoints, variables and watches. Feel free to ask any questions you have.
-
-# Exercise 4 - Remote CLI debugging
-
-This is really useful for debugging through unit-tests, or running code in either vagrant/docker to match your production environment, without having to swap versions of PHP 
-
-Task 1 - ssh into the vagrant box `vagrant ssh`
-
-Go to the directory that holds the source file `cd /vagrant/web/exercise_8`
-
-Start PhpStorm listening to 
-
-zend_extension=php_xdebug.so
-xdebug.remote_host = 10.0.2.2 
-xdebug.remote_enable = on
-xdebug.remote_autostart = on 
+Tasks
+-----
+1. Have a play with conditional breakpoints, variables and watches. Feel free to ask any questions you have.
 
 
+Exercise 4 - Remote CLI debugging
+=================================
+
+1. Configure Xdebug
+2. Check config on CLI
+3. Set breakpoint and run CLI app
+
+Debugging CLI applications is possible with a very similar configuration to web applications. This can be very useful
+in combination with PHPUnit or just for debugging CLI apps.
+
+Unfortunately enabling Xdebug applies to all CLI tasks and
+can cause an unacceptable performance decrease. The solution is to not load the Xdebug module by default and only load
+it when specifically required.
+
+1. Delete Xdebug module load file
+2. Add php alias
+
+Tasks
+-----
+1. Install and configure CLI mode debugging
+2. Add php alias and remove xdebug module autoload.
 
 
+Exercise 5
+==========
 
+We will be available to support you setting up Xdebug on one of your own projects, be it inside a VM or local to your
+machine.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Tasks
+-----
+1. Set up Xdebug for your own project
+2. Ask for help if you have any issues
